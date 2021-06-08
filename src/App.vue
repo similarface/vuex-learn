@@ -1,28 +1,19 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <my-addtion></my-addtion>
+    <div>-----------------></div>
+    <my-subaction></my-subaction>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Addiaction from '@/components/Addiaction'
+import Subaction from '@/components/Subaction'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  components: { 'my-addtion': Addiaction, 'my-subaction': Subaction },
+  data() {
+    return {}
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
